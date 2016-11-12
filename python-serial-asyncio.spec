@@ -27,8 +27,8 @@ Requires:	python
 %endif
 %if %{with python3}
 BuildRequires:	python3-2to3
-BuildRequires:	python3-devel >= 3.4
-BuildRequires:	python3-modules >= 3.4
+BuildRequires:	python3-devel >= 1:3.4
+BuildRequires:	python3-modules >= 1:3.4
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -39,7 +39,7 @@ Async I/O extension for python serial module.
 %package -n python3-%{module}
 Summary:	Async I/O extension for pyserial
 Group:		Libraries/Python
-Requires:	python3 >= 3.4
+Requires:	python3 >= 1:3.4
 Requires:	python3-serial
 
 %description -n python3-%{module}
